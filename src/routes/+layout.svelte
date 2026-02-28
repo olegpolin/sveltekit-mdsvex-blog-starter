@@ -4,6 +4,7 @@
 	import { ModeWatcher } from 'mode-watcher';
 	import { Toaster } from '$lib/components/ui/sonner';
 	import Header from '$lib/components/header.svelte';
+	import Footer from '$lib/components/footer.svelte';
 
 	let { children } = $props();
 </script>
@@ -20,4 +21,6 @@
 	<main class="grow flex flex-col px-4 sm:px-8 md:px-16 py-8">
 		{@render children()}
 	</main>
+
+	<Footer />
 </div>
