@@ -2,6 +2,7 @@
   import type { PageProps } from './$types';
   import * as Card from '$lib/components/ui/card';
   import { Button } from '$lib/components/ui/button';
+  import { formatDate } from '$lib/utils';
 
   let { data }: PageProps = $props();
 </script>
@@ -13,13 +14,7 @@
       <Card.Root>
         <Card.Header>
           <Card.Title class="text-2xl">{post.title}</Card.Title>
-          <Card.Description>
-            {new Date(post.date).toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'short',
-              day: 'numeric'
-            })}
-          </Card.Description>
+          <Card.Description>{formatDate(post.date)}</Card.Description>
         </Card.Header>
         <Card.Content>{post.description}</Card.Content>
         <Card.Footer class="mt-auto">
