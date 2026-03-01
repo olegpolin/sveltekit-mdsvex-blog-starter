@@ -4,8 +4,6 @@
   import { resetMode, setMode } from 'mode-watcher';
   import SunIcon from '@lucide/svelte/icons/sun';
   import MoonIcon from '@lucide/svelte/icons/moon';
-
-  const year = new Date().getFullYear();
 </script>
 
 <footer class="w-full flex flex-row items-center justify-between gap-8 p-8">
