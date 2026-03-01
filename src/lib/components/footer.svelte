@@ -9,7 +9,21 @@
 </script>
 
 <footer class="w-full flex flex-row items-center justify-between gap-8 p-8">
-  <p class="text-sm text-muted-foreground">&copy; {year}</p>
+  <p class="text-sm text-muted-foreground">
+    Made with
+    <a class="font-medium underline underline-offset-4" href="https://svelte.dev" target="_blank" rel="noopener noreferrer">
+      SvelteKit
+    </a>,
+    <a class="font-medium underline underline-offset-4" href="https://mdsvex.pngwn.io" target="_blank" rel="noopener noreferrer">
+      MDsveX
+    </a>,
+    <a class="font-medium underline underline-offset-4" href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer">
+      Tailwind
+    </a> &amp;
+    <a class="font-medium underline underline-offset-4" href="https://shadcn-svelte.com" target="_blank" rel="noopener noreferrer">
+      shadcn-svelte
+    </a>.
+  </p>
   <DropdownMenu.Root>
     <DropdownMenu.Trigger class={buttonVariants({ variant: "outline", size: "icon" })}>
       <SunIcon class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all! dark:-rotate-90 dark:scale-0" />
