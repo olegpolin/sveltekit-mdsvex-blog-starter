@@ -3,6 +3,11 @@
   import { Button } from '$lib/components/ui/button';
 </script>
 
+<svelte:head>
+	<title>SvelteKit MDsveX Blog Starter</title>
+	<meta name="description" content="SvelteKit + MDsveX blog starter template with Tailwind CSS and shadcn-svelte" />
+</svelte:head>
+
 <div class="grow flex items-center justify-center">
   <Card.Root class="w-full max-w-96">
     <Card.Header>
