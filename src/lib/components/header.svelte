@@ -44,7 +44,7 @@
     </NavigationMenu.Root>
 
     <div class="md:basis-1/4 flex justify-end">
-      <Button class="md:hidden" variant="ghost" size="icon" onclick={() => mobileMenuOpen = !mobileMenuOpen}>
+      <Button class="md:hidden" variant="ghost" size="icon" onclick={() => mobileMenuOpen = !mobileMenuOpen} aria-label="Menu">
         {#if mobileMenuOpen}
           <XIcon class="size-6" />
         {:else}
