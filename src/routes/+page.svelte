@@ -1,6 +1,7 @@
 <script lang="ts">
-  import * as Card from '$lib/components/ui/card';
+  import * as Empty from '$lib/components/ui/empty';
   import { Button } from '$lib/components/ui/button';
+  import BookOpenIcon from '@lucide/svelte/icons/book-open';
 </script>
 
 <svelte:head>
@@ -8,14 +9,15 @@
 	<meta name="description" content="SvelteKit + MDsveX blog starter template with Tailwind CSS and shadcn-svelte" />
 </svelte:head>
 
-<div class="grow flex items-center justify-center">
-  <Card.Root class="w-full max-w-96">
-    <Card.Header>
-      <Card.Title>Blog</Card.Title>
-      <Card.Description>This blog implementation uses MDsveX.</Card.Description>
-    </Card.Header>
-    <Card.Footer>
-      <Button class="w-full" href="/blog">View posts</Button>
-    </Card.Footer>
-  </Card.Root>
-</div>
+<Empty.Root>
+  <Empty.Header>
+    <Empty.Media variant="icon">
+      <BookOpenIcon />
+    </Empty.Media>
+    <Empty.Title class="text-2xl">SvelteKit MDsveX Blog Starter</Empty.Title>
+    <Empty.Description>SvelteKit + MDsveX blog starter template with Tailwind CSS and shadcn-svelte</Empty.Description>
+  </Empty.Header>
+  <Empty.Content>
+    <Button href="/blog">View blog posts</Button>
+  </Empty.Content>
+</Empty.Root>
