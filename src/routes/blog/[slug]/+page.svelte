@@ -14,7 +14,7 @@
 </svelte:head>
 
 <div class="flex flex-col items-center gap-16">
-  <article class="max-w-full prose prose-zinc dark:prose-invert mx-auto">
+  <article class="max-md:max-w-full prose prose-zinc dark:prose-invert mx-auto">
     <h1>{data.meta.title}</h1>
     <p class="text-sm text-muted-foreground">{formatDate(data.meta.date)}</p>
     <Content />
