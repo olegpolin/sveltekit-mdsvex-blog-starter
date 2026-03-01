@@ -1,0 +1,21 @@
+---
+title: shadcn-svelte Introduction
+description: An unofficial, community-led Svelte port of shadcn/ui. We are not affiliated with shadcn, but we did get his blessing before creating a Svelte version of his work. This project was born out of the need for a similar project for the Svelte ecosystem.
+date: 2025-06-08
+---
+
+An unofficial, community-led Svelte port of shadcn/ui. We are not affiliated with shadcn, but we did get his blessing before creating a Svelte version of his work. This project was born out of the need for a similar project for the Svelte ecosystem.
+
+This is not a component library. It is how you build your component library.
+
+You know how most traditional component libraries work: you install a package from NPM, import the components, and use them in your app.
+
+This approach works well until you need to customize a component to fit your design system or require one that isn’t included in the library. Often, you end up wrapping library components, writing workarounds to override styles, or mixing components from different libraries with incompatible APIs.
+
+This is what shadcn-svelte aims to solve. It is built around the following principles:
+
+* Open Code: The top layer of your component code is open for modification.
+* Composition: Every component uses a common, composable interface, making them predictable.
+* Distribution: A flat-file schema and command-line tool make it easy to distribute components.
+* Beautiful Defaults: Carefully chosen default styles, so you get great design out-of-the-box.
+* AI-Ready: Open code for LLMs to read, understand, and improve.
