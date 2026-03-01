@@ -18,6 +18,6 @@
     <Empty.Description>SvelteKit + MDsveX blog starter template with Tailwind CSS and shadcn-svelte</Empty.Description>
   </Empty.Header>
   <Empty.Content>
-    <Button href="/blog">View blog posts</Button>
+    <Button href="/blog">View Blog Posts</Button>
   </Empty.Content>
 </Empty.Root>

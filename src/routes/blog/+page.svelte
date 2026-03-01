@@ -39,7 +39,7 @@
           </Card.Header>
           <Card.Content>{post.description}</Card.Content>
           <Card.Footer class="mt-auto">
-            <Button class="w-full" href="/blog/{post.slug}">Read more</Button>
+            <Button class="w-full" href="/blog/{post.slug}">Read More</Button>
           </Card.Footer>
         </Card.Root>
       {/each}
