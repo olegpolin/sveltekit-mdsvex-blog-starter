@@ -6,6 +6,7 @@
   import BookIcon from '@lucide/svelte/icons/book';
   import MenuIcon from '@lucide/svelte/icons/menu';
   import XIcon from '@lucide/svelte/icons/x';
+  import GitHubIcon from '$lib/assets/icons/github-icon.svelte';
 
   const navMenuLinks = [
     {
@@ -43,7 +44,10 @@
       </NavigationMenu.List>
     </NavigationMenu.Root>
 
-    <div class="md:basis-1/4 flex justify-end">
+    <div class="md:basis-1/4 flex flex-row items-center gap-8 justify-end">
+      <Button variant="outline" size="icon" href="https://github.com/olegpolin/sveltekit-mdsvex-blog-starter" target="_blank" rel="noopener noreferrer">
+        <GitHubIcon />
+      </Button>
       <Button class="md:hidden" variant="ghost" size="icon" onclick={() => mobileMenuOpen = !mobileMenuOpen} aria-label="Menu">
         {#if mobileMenuOpen}
           <XIcon class="size-6" />
