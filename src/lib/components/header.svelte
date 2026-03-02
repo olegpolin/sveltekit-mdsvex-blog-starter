@@ -45,7 +45,7 @@
     </NavigationMenu.Root>
 
     <div class="md:basis-1/4 flex flex-row items-center gap-8 justify-end">
-      <Button variant="outline" size="icon" href="https://github.com/olegpolin/sveltekit-mdsvex-blog-starter" target="_blank" rel="noopener noreferrer">
+      <Button variant="outline" size="icon" href="https://github.com/olegpolin/sveltekit-mdsvex-blog-starter" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository">
         <GitHubIcon />
       </Button>
       <Button class="md:hidden" variant="ghost" size="icon" onclick={() => mobileMenuOpen = !mobileMenuOpen} aria-label="Menu">
